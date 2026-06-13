@@ -4,14 +4,27 @@ body{
     background: #f4f4f4;
 }
 
-h1{
+.header {
+    background: green;
+    display: flex;
+    justify-content: center;  
+    align-items: center;     
+    padding: 20px;
+    color: white;
+}
+
+h1 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0;
     text-align: center;
-    padding: 15px;
+    letter-spacing: 2px;
 }
 
 #contenedorMapa{
     position: relative;
-    width: 95%;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
 }
@@ -99,8 +112,6 @@ h1{
     line-height: 1.5;
 }
 
-/* Tablets y móviles */
-
 @media (max-width: 768px){
 
     h1{
@@ -120,7 +131,14 @@ h1{
 
 }
 
-/* Móviles pequeños */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
 
 @media (max-width: 480px){
 
@@ -136,5 +154,4 @@ h1{
     #cerrar{
         font-size: 20px;
     }
-
 }
