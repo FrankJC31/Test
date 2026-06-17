@@ -39,12 +39,12 @@ h1 {
     line-height: 0;
 }
 #contenedorReg {
-    position: relative;
     width: 100%;
     max-width: 1200px;
-    margin: 0 auto;
+    margin: 15px auto 15px; 
     line-height: 0;
 }
+
 #mapa {
     width: 100%;
     height: auto;
